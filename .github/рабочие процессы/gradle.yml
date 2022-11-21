@@ -31,9 +31,8 @@ jobs:
     - name: Run chmod to make gradlew executable
       run: chmod +x ./gradlew
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@v1
-      with:
-        arguments: build
+      run: ./gradlew build
+
     - uses: mr-smithers-excellent/docker-build-push@v5 # Для Docker Hub 
       with:
         image: malk04/new
