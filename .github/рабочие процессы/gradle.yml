@@ -35,7 +35,6 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v5 # Для Docker Hub 
       with:
         image: malk04/new
-        tag: laba5
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
